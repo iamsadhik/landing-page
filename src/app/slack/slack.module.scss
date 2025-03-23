@@ -1,0 +1,23 @@
+.parent-con {
+	margin: auto;
+	padding: 20px;
+	max-width: var(--max-width);
+}
+.desc-con {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+    max-width: 320px;
+}
+.btn-con {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+    width: 100%;
+}
+.content-con {
+	padding: 24px 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}

@@ -1,0 +1,41 @@
+.top-con {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4px;
+}
+.left-section {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	.tb-items-con {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+	.tb-item {
+		display: flex;
+		gap: 2px;
+	}
+}
+.right-section {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+.hamburger{
+	display: none;
+}
+
+@media screen and (max-width: 950px) {
+	.right-section{
+		display: none;
+	}
+	.hamburger{
+		display: flex;
+		cursor: pointer;
+		min-width: 24px;
+		min-height: 24px;
+	}
+
+}

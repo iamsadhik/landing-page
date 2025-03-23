@@ -1,0 +1,125 @@
+.dropdown-main-con {
+    position: relative;
+
+    .button-con {
+        display: flex;
+        position: relative;
+        align-items: center;
+        gap: 4px;
+        font-size: 15px;
+        padding: 4px;
+        outline: none;
+        cursor: pointer;
+        width: fit-content;
+        border: none;
+        user-select: none;
+        background-color: transparent;
+
+        .arrow-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            width: fit-content;
+            transition: transform 0.3s ease-out;
+
+            &.rotate {
+                transform: rotateZ(180deg);
+            }
+        }
+    }
+
+    .contents-con {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        min-height: 350px;
+        min-width: 550px;
+        background-color: white;
+        transition: transform 0.3s ease-out, opacity 0.2s ease-out;
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+        box-shadow: 0 1px 10px #0003;
+        border-radius: 8px;
+
+        &.show {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 16px;
+
+            .items-map-container {
+                margin-bottom: 40px;
+                display: flex;
+                gap: 40px;
+
+                .dropdown-data-con {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .title {
+                        font-size: 14px;
+                        color: black;
+                        font-weight: 600;
+                    }
+
+                    .item-text {
+                        font-size: 15px;
+                        color: black;
+                        font-weight: 300;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .help-container {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+
+                .watch-demo-con {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+
+                .divider-con {
+                    width: 1px;
+                    height: 20px;
+                    background-color: #00000026;
+                }
+
+                .link-text,
+                .link-text-black {
+                    color: #1264a3;
+                    font-size: 14px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline #1264a3;
+                    }
+                }
+
+                .link-text-black {
+                    color: black;
+                    font-weight: 300;
+
+                    &:hover {
+                        color: #1264a3;
+                        text-decoration: underline #1264a3;
+                    }
+                }
+            }
+        }
+    }
+}

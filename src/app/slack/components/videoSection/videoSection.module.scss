@@ -1,0 +1,29 @@
+.video-section-con{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+.video-con{
+    height: fit-content;
+    max-width: 400px; 
+}
+.content-con{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width:950px){
+    .video-section-con{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    } 
+     .video-con{
+         width: 100%;
+         height: 100%;
+         max-width: unset;
+     }
+ }
